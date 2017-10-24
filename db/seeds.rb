@@ -3,7 +3,7 @@ messages = ["comment1", "comment2", "comment3", "comment4", "comment5", "comment
 
 10.times do |i|
   Post.create(
-    title: titles.each {|title| print title},
-    body: messages.each {|x| print x}
+    title: titles.each {|title| print "title"},
+    body: messages.each {|x| print "x"}
   )
 end
